@@ -1,0 +1,26 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="policy.intranetacstjosse">
+
+  <five:registerPackage package="." initialize=".initialize" />
+
+  <genericsetup:registerProfile
+      name="default"
+      title="policy.intranetacstjosse"
+      directory="profiles/default"
+      description="Installs the policy.intranetacstjosse package"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+  <!-- -*- extra stuff goes here -*- -->
+  <include package="collective.ckeditor" />
+  <include package="collective.easyslider" />
+  <include package="collective.collage.easyslider" />
+  <include package="quintagroup.analytics" />
+  <include package="qi.portlet.TagClouds" />
+  <include package="Products.PloneFormGen" />
+  <include package="plonetheme.intranetacstjosse" />
+  
+</configure>
