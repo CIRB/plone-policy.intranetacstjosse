@@ -29,7 +29,7 @@ setup(name='policy.intranetacstjosse',
       url='http://svn.plone.org/svn/collective/',
       license='gpl',
       packages=find_packages('src'),
-      package_dir = {'': 'src'},
+      package_dir={'': 'src'},
       namespace_packages=['policy', ],
       include_package_data=True,
       zip_safe=False,
@@ -38,9 +38,9 @@ setup(name='policy.intranetacstjosse',
           # -*- Extra requirements: -*-
           'collective.ckeditor',
           'collective.easyslider',
-  	  'collective.collage.easyslider',
-	  'quintagroup.analytics',
-	  'qi.portlet.TagClouds',
+          'collective.collage.easyslider',
+          'quintagroup.analytics',
+          'qi.portlet.TagClouds',
           'Products.PloneFormGen',
           'plonetheme.intranetacstjosse'
       ],
@@ -50,6 +50,4 @@ setup(name='policy.intranetacstjosse',
       [z3c.autoinclude.plugin]
       target = plone
       """,
-      setup_requires=["PasteScript"],
-      paster_plugins=["templer.localcommands"],
       )
