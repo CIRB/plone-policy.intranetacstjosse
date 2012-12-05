@@ -42,7 +42,8 @@ setup(name='policy.intranetacstjosse',
           'quintagroup.analytics',
           'qi.portlet.TagClouds',
           'Products.PloneFormGen',
-          'plonetheme.intranetacstjosse'
+          'plonetheme.intranetacstjosse',
+          'plone.app.ldap',
       ],
       extras_require={'test': ['plone.app.testing']},
       entry_points="""
